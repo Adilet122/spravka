@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Единое окно - Заявка</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <canvas id="background"></canvas>
+    
+    <header>
+        <h1>Единое окно - Заявка</h1>
+    </header>
+
+    <main>
+        <section id="3dSection">
+            <!-- Здесь будет 3D-анимация -->
+        </section>
+        
+        <!-- Форма для справки -->
+        <section id="getCertificate">
+            <h2>Заявка на получение справки</h2>
+            <form action="submit_form.php" method="post">
+                <label for="fullName">ФИО:</label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <label for="dob">Дата рождения:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <label for="phone">Номер телефона:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="certificateType">Вид справки:</label>
+                <select id="certificateType" name="certificateType" required>
+                    <option value="completed">Окончил/Окончила</option>
+                    <option value="currently_studying">Учится в данный момент</option>
+                </select>
+
+                <label for="comments">Дополнительные комментарии:</label>
+                <textarea id="comments" name="comments"></textarea>
+
+                <button type="submit">Отправить заявку</button>
+            </form>
+        </section>
+
+        <!-- Форма для диплома -->
+        <section id="getDiploma">
+            <h2>Заявка на получение диплома</h2>
+            <form action="submit_form.php" method="post">
+                <label for="fullNameDiploma">ФИО:</label>
+                <input type="text" id="fullNameDiploma" name="fullNameDiploma" required>
+
+                <label for="dobDiploma">Дата рождения:</label>
+                <input type="date" id="dobDiploma" name="dobDiploma" required>
+
+                <label for="phoneDiploma">Номер телефона:</label>
+                <input type="tel" id="phoneDiploma" name="phoneDiploma" required>
+
+                <label for="emailDiploma">Email:</label>
+                <input type="email" id="emailDiploma" name="emailDiploma" required>
+
+                <label for="diplomaSerial">Серия диплома:</label>
+                <input type="text" id="diplomaSerial" name="diplomaSerial">
+
+                <label for="institution">Учебное заведение:</label>
+                <input type="text" id="institution" name="institution" required>
+
+                <label for="year">Год выпуска:</label>
+                <input type="number" id="year" name="year" required>
+
+                <label for="commentsDiploma">Дополнительные комментарии:</label>
+                <textarea id="commentsDiploma" name="commentsDiploma"></textarea>
+
+                <button type="submit">Отправить заявку</button>
+            </form>
+        </section>
+
+        <!-- Форма для обходных листовок -->
+        <section id="getPass">
+            <h2>Заявка на обходные листовки</h2>
+            <form action="submit_form.php" method="post">
+                <label for="fullNamePass">ФИО:</label>
+                <input type="text" id="fullNamePass" name="fullNamePass" required>
+
+                <label for="dobPass">Дата рождения:</label>
+                <input type="date" id="dobPass" name="dobPass" required>
+
+                <label for="phonePass">Номер телефона:</label>
+                <input type="tel" id="phonePass" name="phonePass" required>
+
+                <label for="emailPass">Email:</label>
+                <input type="email" id="emailPass" name="emailPass" required>
+
+                <label for="purpose">Цель обходных листовок:</label>
+                <input type="text" id="purpose" name="purpose" required>
+
+                <label for="commentsPass">Дополнительные комментарии:</label>
+                <textarea id="commentsPass" name="commentsPass"></textarea>
+
+                <button type="submit">Отправить заявку</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

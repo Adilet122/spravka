@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #ffd700 0%, #ffd700 20%, #000e71 20%, #000e71 100%); /* Золотой верх и низ, темно-синий центр */
+}
+
+header, footer {
+    background: #ffd700; /* Золотой цвет для верхнего и нижнего фона */
+    color: #000; /* Черный текст для контраста */
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    background: #000e71; /* Темно-синий фон для основной области */
+    color: #fff; /* Белый текст для контраста */
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 2rem auto;
+    width: 80%;
+    max-width: 1200px;
+}
+
+h1, h2 {
+    color: #fff; /* Белый цвет заголовков */
+}
+
+form {
+    background: #333; /* Темный фон формы для контраста */
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+label, input, select, textarea, button {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #ffd700; /* Золотой цвет кнопок */
+    border: none;
+    color: #000;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e6c800; /* Более темный золотой при наведении */
+}
+
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+#3dSection {
+    position: relative;
+    z-index: 1; /* Убедитесь, что это выше, чем canvas */
+}
